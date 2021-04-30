@@ -8,12 +8,12 @@ export interface Upwell {
 
 
 export interface RepEffSL {
-  0: number;
-  1: number;
-  2: number;
-  3: number;
-  4: number;
-  5: number;
+  a: number;
+  b: number;
+  c: number;
+  d: number;
+  e: number;
+  f: number;
 }
 
 export interface IceOreSpecProcSL {

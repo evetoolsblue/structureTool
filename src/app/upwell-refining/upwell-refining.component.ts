@@ -16,7 +16,8 @@ export class UpwellRefiningComponent implements OnInit {
   reprocessingSL: [number, number, number, number, number, number];
   IceOreSL: [number, number, number, number, number, number];
   tableData: RepEffSL[];
-  displayedColumns: string[] = ['0', '1', '2', '3', '4', '5'];
+  displayedColumns: string[] = ['a', 'b', 'c', 'd', 'e', 'f'];
+  displayedRows: string[] = ['0', '1', '2', '3', '4', '5'];
   dataSource: RepEffSL[];
   constructor() {
     this.rigs = ["none", "T1", "T2"];
@@ -27,18 +28,20 @@ export class UpwellRefiningComponent implements OnInit {
     this.security = "high sec";
     this.reprocessingSL = [0, 1, 2, 3, 4, 5];
     this.IceOreSL = [0, 1, 2, 3, 4, 5];
-    this.tableData = [{0: 23, 1: 1, 2: 2, 3: 3, 4: 4, 5: 5},
-                      {0: 24, 1: 11, 2: 22, 3: 33, 4: 44, 5: 55}] ;
+    this.tableData = [{a: 23, b: 1, c: 2, d: 3, e: 4, f: 5},
+                      {a: 24, b: 11, c: 22, d: 33, e: 44, f: 55}] ;
     this.dataSource = this.tableData;
   }
 
   ngOnInit(): void {
 
-
+    this.dataSource = this.tableData;
 
   }
-  fillData() {
-
+  fillData(): void {
+    this.tableData = [{a: 23, b: 1, c: 2, d: 3, e: 4, f: 5},
+      {a: 24, b: 11, c: 22, d: 33, e: 44, f: 55},
+      {a: 44, b: 5.5, c: 6.6, d: 77, e: 88, f: 99}] ;
   }
 
 }
