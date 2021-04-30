@@ -39,7 +39,7 @@ export class UpwellRefiningComponent implements OnInit {
 
   }
   fillData(): void {
-    this.tableData = [{a: 23, b: 1, c: 2, d: 3, e: 4, f: 5},
+    this.dataSource = [{a: 23, b: 1, c: 2, d: 3, e: 4, f: 5},
       {a: 24, b: 11, c: 22, d: 33, e: 44, f: 55},
       {a: 44, b: 5.5, c: 6.6, d: 77, e: 88, f: 99}] ;
   }
