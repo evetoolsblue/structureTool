@@ -1,0 +1,29 @@
+<div>
+  <mat-form-field>
+    <mat-label>Font size</mat-label>
+    <mat-select [(ngModel)]="rigValue" name="rig">
+      <mat-option *ngFor="let rig of rigs" [value]="rig.valueOf()">
+        {{rig}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Font size</mat-label>
+    <mat-select [(ngModel)]="structure" name="structure">
+      <mat-option *ngFor="let stc of structures" [value]="stc.valueOf()">
+        {{stc}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field>
+    <mat-label>Font size</mat-label>
+    <mat-select [(ngModel)]="security" name="security">
+      <mat-option *ngFor="let security of securities" [value]="security.valueOf()">
+        {{security}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div>
+  <button (click)="fillData()">Fill Data</button>
+</div>

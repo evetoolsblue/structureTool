@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes: Routes = [];
+import {UpwellRefiningComponent} from './upwell-refining/upwell-refining.component';
+const routes: Routes = [{path: "", component: UpwellRefiningComponent}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
